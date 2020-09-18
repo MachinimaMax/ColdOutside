@@ -8,12 +8,16 @@ y = camera_get_view_height(view_camera[0])/1.5 - sprite_height/2;
 // Initialize movement variables
 left = 0;
 right = 0;
-
 up = 0;
 down = 0;
-
 move_speed = 4;
 default_move_speed = move_speed;
+
+// keeps track of if the player is trying to interact with something
+interact = 0;
+
+// family menu, when tab is pressed this should be true and family menu should be displayed
+family_menu_on = 0;
 
 // Resource stats
 

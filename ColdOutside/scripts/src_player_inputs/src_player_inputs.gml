@@ -8,4 +8,10 @@ function src_player_inputs(){
 	up =  keyboard_check(vk_up) || keyboard_check(ord("W"));
 	down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 	
+	// interaction input
+	interact = keyboard_check(ord("E"));
+	
+	// family menu input
+	family_menu_on = keyboard_check(vk_tab);
+	
 }

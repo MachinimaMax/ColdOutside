@@ -59,6 +59,10 @@ function src_pickup(){
 		base_morale += .20;
 	}
 	
+	// claculate morale
+	calculated_morale = (hunger_percentage * hunger) + (warmth_percentage * warmth)
+	+ ((1-(warmth_percentage + hunger_percentage)) * base_morale);
+	
 	// check items being calculated at the same time and exceeding their cap
 	if(base_morale > 1){base_morale = 1;}
 	if(calculated_morale > 1){calculated_morale = 1;}
