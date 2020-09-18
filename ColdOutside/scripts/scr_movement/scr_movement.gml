@@ -3,4 +3,6 @@
 function scr_movement(){
 	x += (right - left) * move_speed;
 	y += (down - up) * move_speed;
+	
+	move_speed = default_move_speed;
 }

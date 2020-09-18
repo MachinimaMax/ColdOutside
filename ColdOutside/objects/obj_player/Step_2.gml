@@ -4,7 +4,6 @@
 
 halfViewWidth = camera_get_view_width(view_camera[0])/2 - sprite_width/2;
 halfViewWidthRightLimit = camera_get_view_width(view_camera[0])/2 + sprite_width/2;
-halfViewHeight = camera_get_view_height(view_camera[0])/2 - sprite_height/2;
 
 if(x > halfViewWidth && x < room_width-halfViewWidthRightLimit){
 	camera_set_view_pos(view_camera[0], x - halfViewWidth, camera_get_view_y(view_camera[0]));
