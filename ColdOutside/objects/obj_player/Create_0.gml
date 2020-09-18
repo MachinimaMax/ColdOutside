@@ -19,13 +19,13 @@ default_move_speed = move_speed;
 
 money = 0;
 // [0,1] percentage, higher is better
-hunger = .6;
-warmth = .6;
+hunger = .611;
+warmth = .611;
 
 // calculated morale is affected by base_morale, hunger, and warmth
 // Hunger and warmth will affect the total of calculated morale by 20% each if they are full.
 // As they lower they have an increasing affect on calculated morale up to 50% each.
-base_morale = .2
+base_morale = .211
 hunger_percentage = .5 - .3*hunger;
 warmth_percentage = .5 - .3*warmth;
 

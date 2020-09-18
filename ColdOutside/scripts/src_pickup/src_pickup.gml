@@ -59,4 +59,10 @@ function src_pickup(){
 		base_morale += .20;
 	}
 	
+	// check items being calculated at the same time and exceeding their cap
+	if(base_morale > 1){base_morale = 1;}
+	if(calculated_morale > 1){calculated_morale = 1;}
+	if(warmth > 1){warmth = 1;}
+	if(hunger > 1){hunger = 1;}
+	
 }
