@@ -1,6 +1,13 @@
 {
   "resources": [
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"spr_temp_background","path":"sprites/spr_temp_background/spr_temp_background.yy",},"order":1,},
+    {"id":{"name":"scr_movement","path":"scripts/scr_movement/scr_movement.yy",},"order":0,},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
+    {"id":{"name":"obj_whitebox_temp","path":"objects/obj_whitebox_temp/obj_whitebox_temp.yy",},"order":1,},
+    {"id":{"name":"spr_whitebox_temp","path":"sprites/spr_whitebox_temp/spr_whitebox_temp.yy",},"order":2,},
+    {"id":{"name":"Settings","path":"objects/Settings/Settings.yy",},"order":2,},
+    {"id":{"name":"rm_town","path":"rooms/rm_town/rm_town.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Main","path":"options/main/options_main.yy",},
@@ -14,7 +21,7 @@
     "children": [],
   },
   "RoomOrder": [
-    {"name":"Room1","path":"rooms/Room1/Room1.yy",},
+    {"name":"rm_town","path":"rooms/rm_town/rm_town.yy",},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
