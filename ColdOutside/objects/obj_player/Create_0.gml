@@ -12,7 +12,7 @@ right = 0;
 up = 0;
 down = 0;
 
-move_speed = 10;
+move_speed = 4;
 default_move_speed = move_speed;
 
 // Resource stats
@@ -32,5 +32,3 @@ warmth_percentage = .5 - .3*warmth;
 calculated_morale = (hunger_percentage * hunger) + (warmth_percentage * warmth)
 	+ ((1-(warmth_percentage + hunger_percentage)) * base_morale);
 
-show_debug_message("calculated morale: ");
-show_debug_message(calculated_morale);

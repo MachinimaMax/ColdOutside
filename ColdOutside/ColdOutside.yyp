@@ -1,13 +1,17 @@
 {
   "resources": [
+    {"id":{"name":"spr_temp_money","path":"sprites/spr_temp_money/spr_temp_money.yy",},"order":4,},
     {"id":{"name":"spr_whitebox_temp2","path":"sprites/spr_whitebox_temp2/spr_whitebox_temp2.yy",},"order":3,},
     {"id":{"name":"spr_temp_background","path":"sprites/spr_temp_background/spr_temp_background.yy",},"order":1,},
+    {"id":{"name":"obj_money","path":"objects/obj_money/obj_money.yy",},"order":4,},
+    {"id":{"name":"spr_temp_food","path":"sprites/spr_temp_food/spr_temp_food.yy",},"order":5,},
     {"id":{"name":"scr_movement","path":"scripts/scr_movement/scr_movement.yy",},"order":0,},
     {"id":{"name":"obj_whitebox_temp2","path":"objects/obj_whitebox_temp2/obj_whitebox_temp2.yy",},"order":3,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"src_check_collision","path":"scripts/src_check_collision/src_check_collision.yy",},"order":1,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"obj_whitebox_temp","path":"objects/obj_whitebox_temp/obj_whitebox_temp.yy",},"order":1,},
+    {"id":{"name":"src_pickup","path":"scripts/src_pickup/src_pickup.yy",},"order":3,},
     {"id":{"name":"spr_whitebox_temp","path":"sprites/spr_whitebox_temp/spr_whitebox_temp.yy",},"order":2,},
     {"id":{"name":"src_player_inputs","path":"scripts/src_player_inputs/src_player_inputs.yy",},"order":2,},
     {"id":{"name":"Settings","path":"objects/Settings/Settings.yy",},"order":2,},
