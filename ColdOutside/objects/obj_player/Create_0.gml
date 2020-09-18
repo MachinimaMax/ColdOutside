@@ -25,7 +25,7 @@ warmth = .6;
 // calculated morale is affected by base_morale, hunger, and warmth
 // Hunger and warmth will affect the total of calculated morale by 20% each if they are full.
 // As they lower they have an increasing affect on calculated morale up to 50% each.
-base_morale = .5
+base_morale = .2
 hunger_percentage = .5 - .3*hunger;
 warmth_percentage = .5 - .3*warmth;
 

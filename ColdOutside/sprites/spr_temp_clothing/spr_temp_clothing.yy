@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"69c27cc2-1ba6-4e73-941b-ffb6e609b624","path":"sprites/spr_temp_food/spr_temp_food.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"69c27cc2-1ba6-4e73-941b-ffb6e609b624","path":"sprites/spr_temp_food/spr_temp_food.yy",},"LayerId":{"name":"b8849f5a-d7a8-48da-ad25-e6e145305d34","path":"sprites/spr_temp_food/spr_temp_food.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_temp_food","path":"sprites/spr_temp_food/spr_temp_food.yy",},"resourceVersion":"1.0","name":"69c27cc2-1ba6-4e73-941b-ffb6e609b624","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f579fbd1-fba7-4a94-9859-6cac2da369fb","path":"sprites/spr_temp_clothing/spr_temp_clothing.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f579fbd1-fba7-4a94-9859-6cac2da369fb","path":"sprites/spr_temp_clothing/spr_temp_clothing.yy",},"LayerId":{"name":"3f1d39b9-0673-4500-a177-505a30cc5717","path":"sprites/spr_temp_clothing/spr_temp_clothing.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_temp_clothing","path":"sprites/spr_temp_clothing/spr_temp_clothing.yy",},"resourceVersion":"1.0","name":"f579fbd1-fba7-4a94-9859-6cac2da369fb","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_temp_food","path":"sprites/spr_temp_food/spr_temp_food.yy",},
+    "spriteId": {"name":"spr_temp_clothing","path":"sprites/spr_temp_clothing/spr_temp_clothing.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"c4f88761-9800-4ed3-baaf-327b88b951a6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"69c27cc2-1ba6-4e73-941b-ffb6e609b624","path":"sprites/spr_temp_food/spr_temp_food.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f5ee0190-bf71-4f5c-9c35-1f64136066e2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f579fbd1-fba7-4a94-9859-6cac2da369fb","path":"sprites/spr_temp_clothing/spr_temp_clothing.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -58,21 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_temp_food","path":"sprites/spr_temp_food/spr_temp_food.yy",},
+    "parent": {"name":"spr_temp_clothing","path":"sprites/spr_temp_clothing/spr_temp_clothing.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_temp_food",
+    "name": "spr_temp_clothing",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b8849f5a-d7a8-48da-ad25-e6e145305d34","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3f1d39b9-0673-4500-a177-505a30cc5717","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
     "name": "Sprites",
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_temp_food",
+  "name": "spr_temp_clothing",
   "tags": [],
   "resourceType": "GMSprite",
 }

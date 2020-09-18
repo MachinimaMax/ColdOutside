@@ -3,6 +3,8 @@
 function src_pickup(){
 	money_pickup = instance_place(x, y, obj_money);
 	hunger_pickup = instance_place(x, y, obj_food);
+	clothing_pickup = instance_place(x, y, obj_clothing);
+	morale_pickup = instance_place(x, y, obj_morale);
 	
 	// money
 	// player variables cannot be set within another instance
@@ -28,4 +30,33 @@ function src_pickup(){
 	if(temp_food && hunger < 1){
 			hunger += .05;
 	}
+	
+	// clothing/warmth
+	// TODO: clothing should be added to an inventory system
+	temp_clothing = 1;
+	if clothing_pickup != noone with (clothing_pickup){
+		instance_destroy();
+	}
+	else{
+		temp_clothing = 0;
+	}
+	
+	if(temp_clothing && warmth < 1){
+		warmth += .20;
+	}
+	
+	// clothing/warmth
+	// TODO: clothing should be added to an inventory system
+	temp_morale = 1;
+	if morale_pickup != noone with (morale_pickup){
+		instance_destroy();
+	}
+	else{
+		temp_morale = 0;
+	}
+	
+	if(temp_morale && base_morale < 1){
+		base_morale += .20;
+	}
+	
 }
