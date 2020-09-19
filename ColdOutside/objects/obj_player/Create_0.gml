@@ -10,14 +10,20 @@ left = 0;
 right = 0;
 up = 0;
 down = 0;
-move_speed = 4;
+move_speed = 2;
 default_move_speed = move_speed;
 
-// keeps track of if the player is trying to interact with something
+// other inputs
 interact = 0;
-
-// family menu, when tab is pressed this should be true and family menu should be displayed
 family_menu_on = 0;
+
+// day night cycle
+day_length_minutes =  .1
+night_length_minutes = .05
+day = true;
+night = false;
+day_timer = room_speed * day_length_minutes*60;
+night_timer = 0;
 
 // Resource stats
 

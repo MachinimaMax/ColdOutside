@@ -2,6 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function src_check_collision(check_object){
 	
+	default_move_speed = move_speed;
+	
 	if place_meeting(x + (right - left) * move_speed, y, check_object){
 		if(move_speed > 1){
 			move_speed -= 1;

@@ -7,56 +7,32 @@ function src_pickup(){
 	morale_pickup = instance_place(x, y, obj_morale);
 	
 	// money
-	// player variables cannot be set within another instance
-	temp_money = 1;
 	if money_pickup != noone with (money_pickup){
+		other.money += 1;
 		instance_destroy();
 	}
-	else{
-		temp_money = 0;
-	}
-	money += temp_money;
 	
 	// food/hunger
 	// TODO: food should be added to an inventory not eaten immediatly
-	temp_food = 1;
 	if hunger_pickup != noone with (hunger_pickup){
+		other.hunger += .05;
 		instance_destroy();
-	}
-	else{
-		temp_food = 0;
-	}
-	
-	if(temp_food && hunger < 1){
-			hunger += .05;
 	}
 	
 	// clothing/warmth
 	// TODO: clothing should be added to an inventory system
-	temp_clothing = 1;
 	if clothing_pickup != noone with (clothing_pickup){
+		other.warmth += .20;
 		instance_destroy();
-	}
-	else{
-		temp_clothing = 0;
-	}
-	
-	if(temp_clothing && warmth < 1){
-		warmth += .20;
 	}
 	
 	// clothing/warmth
 	// TODO: clothing should be added to an inventory system
-	temp_morale = 1;
 	if morale_pickup != noone with (morale_pickup){
+		if(other.base_morale < 1){
+		other.base_morale += .20;
+		}
 		instance_destroy();
-	}
-	else{
-		temp_morale = 0;
-	}
-	
-	if(temp_morale && base_morale < 1){
-		base_morale += .20;
 	}
 	
 	// claculate morale

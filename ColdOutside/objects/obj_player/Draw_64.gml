@@ -12,3 +12,8 @@ draw_text_colour(gui_morale_x, gui_y, "Morale: " + string(calculated_morale*100)
 draw_text_colour(gui_warmth_x, gui_y, "Warmth: " + string(warmth*100)+"%", c_red, c_red, c_red, c_red, 1);
 draw_text_colour(gui_hunger_x, gui_y, "Hunger: " + string(hunger*100)+"%", c_purple, c_purple, c_purple, c_purple, 1);
 draw_text_colour(gui_money_x, gui_y, "Money: $" + string(money) + ".00", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+
+if(day){
+	draw_text(40, 40, "DAY");}
+else{
+	draw_text(40, 40, "NIGHT");}
