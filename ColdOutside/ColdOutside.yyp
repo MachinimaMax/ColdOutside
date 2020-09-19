@@ -11,6 +11,7 @@
     {"id":{"name":"scr_day_night_cycle","path":"scripts/scr_day_night_cycle/scr_day_night_cycle.yy",},"order":5,},
     {"id":{"name":"obj_food","path":"objects/obj_food/obj_food.yy",},"order":5,},
     {"id":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},"order":1,},
+    {"id":{"name":"day_night_cycle","path":"objects/day_night_cycle/day_night_cycle.yy",},"order":11,},
     {"id":{"name":"scr_movement","path":"scripts/scr_movement/scr_movement.yy",},"order":0,},
     {"id":{"name":"spr_temp_start_game_hover","path":"sprites/spr_temp_start_game_hover/spr_temp_start_game_hover.yy",},"order":10,},
     {"id":{"name":"obj_whitebox_temp2","path":"objects/obj_whitebox_temp2/obj_whitebox_temp2.yy",},"order":3,},
