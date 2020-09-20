@@ -17,14 +17,6 @@ default_move_speed = move_speed;
 interact = 0;
 family_menu_on = 0;
 
-// day night cycle
-day_length_minutes =  .1
-night_length_minutes = .05
-day = true;
-night = false;
-day_timer = room_speed * day_length_minutes*60;
-night_timer = 0;
-
 // Resource stats
 
 money = 0;

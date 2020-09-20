@@ -15,9 +15,9 @@ function scr_resources(){
 	// warmth loss
 	trash_fire_intance = instance_place(x, y, obj_trash_fire);
 	if trash_fire_intance != noone with (trash_fire_intance){
-		if(other.warmth < 1){
-			other.warmth += .0003;
-		}
+		if(other.warmth + .0003 >= 1){
+			other.warmth = 1;
+		}else{other.warmth += .0003;}
 	}
 	
 	if(warmth > 0){

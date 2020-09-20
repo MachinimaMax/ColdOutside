@@ -1,11 +1,13 @@
 {
   "resources": [
     {"id":{"name":"spr_temp_money","path":"sprites/spr_temp_money/spr_temp_money.yy",},"order":4,},
+    {"id":{"name":"spr_temp_candy_bar_inventory","path":"sprites/spr_temp_candy_bar_inventory/spr_temp_candy_bar_inventory.yy",},"order":13,},
     {"id":{"name":"spr_temp_son","path":"sprites/spr_temp_son/spr_temp_son.yy",},"order":11,},
     {"id":{"name":"spr_whitebox_temp2","path":"sprites/spr_whitebox_temp2/spr_whitebox_temp2.yy",},"order":3,},
     {"id":{"name":"obj_trash_fire","path":"objects/obj_trash_fire/obj_trash_fire.yy",},"order":8,},
     {"id":{"name":"spr_temp_background","path":"sprites/spr_temp_background/spr_temp_background.yy",},"order":1,},
     {"id":{"name":"obj_money","path":"objects/obj_money/obj_money.yy",},"order":4,},
+    {"id":{"name":"hud_","path":"objects/hud_/hud_.yy",},"order":12,},
     {"id":{"name":"spr_temp_food","path":"sprites/spr_temp_food/spr_temp_food.yy",},"order":5,},
     {"id":{"name":"but_start_game","path":"objects/but_start_game/but_start_game.yy",},"order":9,},
     {"id":{"name":"scr_day_night_cycle","path":"scripts/scr_day_night_cycle/scr_day_night_cycle.yy",},"order":5,},
@@ -19,7 +21,7 @@
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_temp_morale","path":"sprites/spr_temp_morale/spr_temp_morale.yy",},"order":7,},
     {"id":{"name":"src_check_collision","path":"scripts/src_check_collision/src_check_collision.yy",},"order":1,},
-    {"id":{"name":"obj_son","path":"objects/obj_son/obj_son.yy",},"order":10,},
+    {"id":{"name":"family_member","path":"objects/family_member/family_member.yy",},"order":10,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"obj_whitebox_temp","path":"objects/obj_whitebox_temp/obj_whitebox_temp.yy",},"order":1,},
     {"id":{"name":"src_pickup","path":"scripts/src_pickup/src_pickup.yy",},"order":3,},
@@ -31,6 +33,7 @@
     {"id":{"name":"scr_resources","path":"scripts/scr_resources/scr_resources.yy",},"order":4,},
     {"id":{"name":"spr_temp_start_game","path":"sprites/spr_temp_start_game/spr_temp_start_game.yy",},"order":9,},
     {"id":{"name":"Settings","path":"objects/Settings/Settings.yy",},"order":2,},
+    {"id":{"name":"spr_temp_menu_base","path":"sprites/spr_temp_menu_base/spr_temp_menu_base.yy",},"order":12,},
     {"id":{"name":"rm_town","path":"rooms/rm_town/rm_town.yy",},"order":0,},
   ],
   "Options": [
