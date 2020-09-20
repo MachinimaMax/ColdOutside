@@ -10,3 +10,7 @@ inventory_y = gui_height/1.05;
 
 inventory_width = sprite_get_width(spr_temp_menu_base);
 inventory_height = sprite_get_height(spr_temp_menu_base);
+
+// inventory items
+inventory_item_width = sprite_get_width(spr_inventory_slot);
+inventory_item_height = sprite_get_height(spr_inventory_slot);
