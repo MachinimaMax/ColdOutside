@@ -1,6 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// number of inventory Items
+inventory_slots = 4;
+
+//
+inventory_list = ds_list_create();
+//var i;
+//for (i = 0; i < 10; i += 1){
+//	stack_instance = instance_create(0,0,obj_stack);
+//	ds_list_add(inventory_list, stack_instance);
+//}
+
+
+
 // base inventory
 gui_width = camera_get_view_width(view_camera[0]);
 gui_height = camera_get_view_width(view_camera[0]);

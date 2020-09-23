@@ -9,7 +9,8 @@ function src_player_inputs(){
 	down = keyboard_check(vk_down) || keyboard_check(ord("S"));
 	
 	// interaction input
-	interact = keyboard_check(ord("E"));
+	//interact = keyboard_check_pressed(ord("E"));
+	interact = keyboard_check_pressed(vk_space);
 	
 	// family menu input
 	family_menu_on = keyboard_check(vk_tab);

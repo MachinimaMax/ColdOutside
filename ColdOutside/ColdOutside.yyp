@@ -1,12 +1,13 @@
 {
   "resources": [
     {"id":{"name":"spr_temp_money","path":"sprites/spr_temp_money/spr_temp_money.yy",},"order":4,},
-    {"id":{"name":"spr_temp_candy_bar_inventory","path":"sprites/spr_temp_candy_bar_inventory/spr_temp_candy_bar_inventory.yy",},"order":13,},
+    {"id":{"name":"spr_inv_candy_bar","path":"sprites/spr_inv_candy_bar/spr_inv_candy_bar.yy",},"order":13,},
     {"id":{"name":"spr_temp_son","path":"sprites/spr_temp_son/spr_temp_son.yy",},"order":11,},
     {"id":{"name":"spr_whitebox_temp2","path":"sprites/spr_whitebox_temp2/spr_whitebox_temp2.yy",},"order":3,},
     {"id":{"name":"obj_trash_fire","path":"objects/obj_trash_fire/obj_trash_fire.yy",},"order":8,},
     {"id":{"name":"spr_temp_background","path":"sprites/spr_temp_background/spr_temp_background.yy",},"order":1,},
     {"id":{"name":"obj_money","path":"objects/obj_money/obj_money.yy",},"order":4,},
+    {"id":{"name":"src_interaction","path":"scripts/src_interaction/src_interaction.yy",},"order":6,},
     {"id":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},"order":12,},
     {"id":{"name":"spr_temp_food","path":"sprites/spr_temp_food/spr_temp_food.yy",},"order":5,},
     {"id":{"name":"but_start_game","path":"objects/but_start_game/but_start_game.yy",},"order":9,},
@@ -20,6 +21,7 @@
     {"id":{"name":"obj_morale","path":"objects/obj_morale/obj_morale.yy",},"order":7,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
     {"id":{"name":"spr_temp_morale","path":"sprites/spr_temp_morale/spr_temp_morale.yy",},"order":7,},
+    {"id":{"name":"spr_candy_bar","path":"sprites/spr_candy_bar/spr_candy_bar.yy",},"order":17,},
     {"id":{"name":"src_check_collision","path":"scripts/src_check_collision/src_check_collision.yy",},"order":1,},
     {"id":{"name":"family_member","path":"objects/family_member/family_member.yy",},"order":10,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},

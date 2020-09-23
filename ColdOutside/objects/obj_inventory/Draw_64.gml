@@ -22,7 +22,7 @@ else{
 }
 
 var i;
-for (i = 0; i < 10; i += 1)
+for (i = 0; i < inventory_slots; i += 1)
    {
 	if(point_in_rectangle(mouseX, mouseY, item_one_x, item_one_y, item_one_x + inventory_item_width,
 		item_one_y + inventory_item_height)){
