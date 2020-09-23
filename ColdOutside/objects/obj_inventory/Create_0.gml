@@ -3,14 +3,16 @@
 
 // number of inventory Items
 inventory_slots = 4;
+x_increase = 109;
 
-//
+// holds all of the stack values
 inventory_list = ds_list_create();
-//var i;
-//for (i = 0; i < 10; i += 1){
-//	stack_instance = instance_create(0,0,obj_stack);
-//	ds_list_add(inventory_list, stack_instance);
-//}
+var i;
+for (i = 0; i < 10; i += 1){
+	stack_instance = instance_create_depth(0,0, 0, obj_stack);
+	//stack_instance = 0;
+	ds_list_add(inventory_list, stack_instance);
+}
 
 
 

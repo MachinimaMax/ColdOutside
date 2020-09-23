@@ -3,6 +3,7 @@
     {"id":{"name":"spr_temp_money","path":"sprites/spr_temp_money/spr_temp_money.yy",},"order":4,},
     {"id":{"name":"spr_inv_candy_bar","path":"sprites/spr_inv_candy_bar/spr_inv_candy_bar.yy",},"order":13,},
     {"id":{"name":"spr_temp_son","path":"sprites/spr_temp_son/spr_temp_son.yy",},"order":11,},
+    {"id":{"name":"scr_place_in_inventory","path":"scripts/scr_place_in_inventory/scr_place_in_inventory.yy",},"order":7,},
     {"id":{"name":"spr_whitebox_temp2","path":"sprites/spr_whitebox_temp2/spr_whitebox_temp2.yy",},"order":3,},
     {"id":{"name":"obj_trash_fire","path":"objects/obj_trash_fire/obj_trash_fire.yy",},"order":8,},
     {"id":{"name":"spr_temp_background","path":"sprites/spr_temp_background/spr_temp_background.yy",},"order":1,},
