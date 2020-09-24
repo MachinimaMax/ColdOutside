@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"db02d925-f766-42ad-a3cb-7cf02424963b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Inventory",
+    "path": "folders/Sprites/Inventory.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_candy_bar",

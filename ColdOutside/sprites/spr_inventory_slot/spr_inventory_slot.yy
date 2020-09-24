@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8a630a5e-36af-44c8-85f8-34ea6af568d3","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Inventory",
+    "path": "folders/Sprites/Inventory.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_inventory_slot",
