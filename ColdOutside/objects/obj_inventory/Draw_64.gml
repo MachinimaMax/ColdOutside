@@ -26,7 +26,6 @@ for (i = 0; i < inventory_slots; i += 1)
 	
 	
 	if(current_stack.stack_type != ""){
-		show_debug_message(string(sprite_get_width(current_stack.gui_sprite_index)));
 		draw_sprite(current_stack.gui_sprite_index, 0, item_one_x + x_increase*.15, item_one_y-3);
 		draw_text(item_one_x + x_increase*.05, item_one_y+2, string(current_stack.stack_count));
 	}

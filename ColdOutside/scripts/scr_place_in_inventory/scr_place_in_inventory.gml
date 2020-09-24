@@ -7,64 +7,71 @@ function scr_place_in_inventory(_stack){
 	
 	if(instance_exists(inventory)){
 		// for every item in the stack
-		for(m = 0; m < _stack.stack_count; m++){
-				// for each active inventory stack see if it:
-			// 2.) Has a stack -> check name and if they match see if there is room in the stack
+		var not_inserted = true;
+		var elements = _stack.stack_count;
+		
+		for(m = 0; m < elements; m++){
+			// make it's only posible to make one insertion per outer loop cycle
+			not_inserted = true;
 		
 			// first check to see if any combining can happen
 			for (i = 0; i < inventory.inventory_slots; i += 1){
 				current_stack = ds_list_find_value(inventory.inventory_list, i);
+				
 				if(current_stack.stack_type == _stack.stack_type &&
 					current_stack.stack_count + 1 <= current_stack.stack_limit){
+					show_debug_message("stack_count: " + string(current_stack.stack_count));
+					show_debug_message("m: " + string(m));
 				
+					// this counts as adding the stack item to inventory
+					_stack.stack_count -= 1;
 					current_stack.stack_count += 1;
 				
 					// if the stack is now empty
-					_stack.stack_count -= 1;
 					if(_stack.stack_count <= 0){
-						_stack.stack_count = 1; // send over one item from this stack
 						_stack.sprite_index = noone;
 						return true;
 					}
+					not_inserted = false;
+					show_debug_message("not_inserted: " + string(not_inserted));
+					break;
 				}
 			}
 		
-			// check to see if any empty spots are available
-			for (i = 0; i < inventory.inventory_slots; i += 1){
-				
-				if(ds_list_find_value(inventory.inventory_list, i).stack_type == ""){
-				
-					ds_list_set(inventory.inventory_list, i, _stack);
-				
-					_stack.stack_count -= 1;
-					if(_stack.stack_count <= 0){
-						// we need to make a new stack here with the old stacks values
-						inventory_stack = instance_create_depth(x, y, 0, obj_stack);
-						_stack.stack_count = 1; // send over one item from this stack
-						_stack.sprite_index = noone;
-						return true;
-					}
-				}
-				
+			// Then check for empty spots making sure to fill them up all the way if necessary
+			if(not_inserted){
+				show_debug_message("empty entered");
+				show_debug_message("m: " + string(m));
 				for (i = 0; i < inventory.inventory_slots; i += 1){
-					current_stack = ds_list_find_value(inventory.inventory_list, i);
-					if(current_stack.stack_type == _stack.stack_type &&
-						current_stack.stack_count + 1 <= current_stack.stack_limit){
 				
-						current_stack.stack_count += 1;
-				
-						// if the stack is now empty
+					// check for empty and if empty add
+					if(ds_list_find_value(inventory.inventory_list, i).stack_type == ""){
+					
+						// pass to inventory by value not reference
+						var stack_deep_copy = noone;
+						with(_stack){
+							stack_deep_copy = instance_copy(false);
+						}
+					
+						// add stack to empty inventory space
+						stack_deep_copy.stack_count = 1;
+						stack_deep_copy.sprite_index = noone;
+						
+						ds_list_set(inventory.inventory_list, i, stack_deep_copy);
 						_stack.stack_count -= 1;
+					
+						// if no stack items are left do this
 						if(_stack.stack_count <= 0){
-							_stack.stack_count = 1; // send over one item from this stack
 							_stack.sprite_index = noone;
 							return true;
 						}
+					
+						break;
+					
 					}
 				}
 			}
 		}
 	}
-
 	return false
 }

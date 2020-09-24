@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 stack_limit = 3;
-stack_count = 1;
+stack_count = 0;
 stack_type = "";
 in_game_sprite_index = noone;
 gui_sprite_index = noone;

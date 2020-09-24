@@ -14,6 +14,6 @@ with(contained_stack){
 	stack_type = "candy_bar";
 	in_game_sprite_index = other.stack_sprite_index;
 	gui_sprite_index = other.stack_gui_sprite_index;
-	stack_limit = 2;
-	stack_count = 3;
+	stack_limit = 6;
+	stack_count = 5;
 }

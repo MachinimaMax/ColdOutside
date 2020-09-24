@@ -20,7 +20,6 @@ if(contained_stack != noone)
 		
 			if(interactions >= 2){
 				// Try to send stack to the inventory
-				show_debug_message("send stack to inventory");
 				if(scr_place_in_inventory(contained_stack)){
 					contained_stack = noone;
 				}
