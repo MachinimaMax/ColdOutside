@@ -25,6 +25,8 @@ function src_stack_constructor(stack_id, _x, _y){
 			gui_sprite_index = spr_inv_candy_bar;
 			stack_limit = 3;
 			stack_count = 1;
+			resource = "hunger";
+			amount = .05;
 		}
 		
 		// newspaper stack
@@ -34,9 +36,10 @@ function src_stack_constructor(stack_id, _x, _y){
 			gui_sprite_index = spr_inv_newspaper;
 			stack_limit = 5;
 			stack_count = 3;
+			resource = "warmth";
+			amount = .05;
 		}
 	}
 	
 	return new_stack;
-	
 }

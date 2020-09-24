@@ -20,8 +20,6 @@ function scr_place_in_inventory(_stack){
 				
 				if(current_stack.stack_type == _stack.stack_type &&
 					current_stack.stack_count + 1 <= current_stack.stack_limit){
-					show_debug_message("stack_count: " + string(current_stack.stack_count));
-					show_debug_message("m: " + string(m));
 				
 					// this counts as adding the stack item to inventory
 					_stack.stack_count -= 1;
@@ -33,15 +31,12 @@ function scr_place_in_inventory(_stack){
 						return true;
 					}
 					not_inserted = false;
-					show_debug_message("not_inserted: " + string(not_inserted));
 					break;
 				}
 			}
 		
 			// Then check for empty spots making sure to fill them up all the way if necessary
 			if(not_inserted){
-				show_debug_message("empty entered");
-				show_debug_message("m: " + string(m));
 				for (i = 0; i < inventory.inventory_slots; i += 1){
 				
 					// check for empty and if empty add

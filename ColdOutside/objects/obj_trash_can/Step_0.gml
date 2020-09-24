@@ -3,7 +3,6 @@
 
 // refill the trashcan every morning
 if(day && refill_trash){
-	show_debug_message("HERE");
 	contained_stack = scr_trash_stack_generator(x, y);
 	refill_trash = false
 }

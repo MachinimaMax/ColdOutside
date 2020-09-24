@@ -5,6 +5,7 @@
     {"id":{"name":"spr_temp_son","path":"sprites/spr_temp_son/spr_temp_son.yy",},"order":11,},
     {"id":{"name":"scr_place_in_inventory","path":"scripts/scr_place_in_inventory/scr_place_in_inventory.yy",},"order":0,},
     {"id":{"name":"spr_newspaper","path":"sprites/spr_newspaper/spr_newspaper.yy",},"order":6,},
+    {"id":{"name":"scr_send_stack_to_character","path":"scripts/scr_send_stack_to_character/scr_send_stack_to_character.yy",},"order":4,},
     {"id":{"name":"spr_whitebox_temp2","path":"sprites/spr_whitebox_temp2/spr_whitebox_temp2.yy",},"order":3,},
     {"id":{"name":"src_stack_constructor","path":"scripts/src_stack_constructor/src_stack_constructor.yy",},"order":1,},
     {"id":{"name":"obj_trash_fire","path":"objects/obj_trash_fire/obj_trash_fire.yy",},"order":8,},

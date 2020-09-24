@@ -15,6 +15,14 @@ var i;
 for (i = 0; i < inventory_slots; i += 1)
    {
 	var current_stack = ds_list_find_value(inventory_list, i);
+	if(current_stack.stack_type != "" && current_stack.stack_count <= 0){
+		show_debug_message("i: " + string(i));
+		show_debug_message(current_stack.stack_type);
+		show_debug_message("new_empty_stack count: " + string(current_stack.stack_count));
+		current_stack = instance_create_depth(0,0, 0, obj_stack);
+		ds_list_replace(inventory_list, i, current_stack);
+		
+	}
 	   
 	if(point_in_rectangle(mouseX, mouseY, item_one_x, item_one_y, item_one_x + inventory_item_width,
 		item_one_y + inventory_item_height)){
@@ -34,8 +42,7 @@ for (i = 0; i < inventory_slots; i += 1)
 	
 	// draw the gui stack images. TODO: display the number of items in the stack clearly
 	
-	
-	if(current_stack.stack_type != ""){
+	if(current_stack != noone && current_stack.stack_type != ""){
 		draw_sprite(current_stack.gui_sprite_index, 0, item_one_x + x_increase*.15, item_one_y-3);
 		draw_text(item_one_x + x_increase*.05, item_one_y+2, string(current_stack.stack_count));
 	}
@@ -51,7 +58,7 @@ for (i = 0; i < inventory_slots; i += 1)
 			timer --;
 		}
 		else{
-			if(!scr_drag_stack(player_reference, mouseX, mouseY)){
+			if(!scr_drag_stack(mouseX, mouseY, mouse_follow_stack)){
 				mouse_follow_stack = noone;
 			}
 			timer = room_speed * .3;
