@@ -6,12 +6,14 @@ inventory_slots = 4;
 x_increase = 109;
 mouse_follow_stack = noone;
 timer = room_speed * .3;
+replace_timer = 0;
 
 // holds all of the stack values
 inventory_list = ds_list_create();
 var i;
 for (i = 0; i < 10; i += 1){
 	stack_instance = instance_create_depth(0,0, 0, obj_stack);
+	inventory_index = i;
 	//stack_instance = 0;
 	ds_list_add(inventory_list, stack_instance);
 }

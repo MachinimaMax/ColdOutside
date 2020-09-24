@@ -51,8 +51,9 @@ function scr_place_in_inventory(_stack){
 						// add stack to empty inventory space
 						stack_deep_copy.stack_count = 1;
 						stack_deep_copy.sprite_index = noone;
+						stack_deep_copy.inventory_index = i;
 						
-						ds_list_set(inventory.inventory_list, i, stack_deep_copy);
+						ds_list_replace(inventory.inventory_list, i, stack_deep_copy);
 						_stack.stack_count -= 1;
 					
 						// if no stack items are left do this

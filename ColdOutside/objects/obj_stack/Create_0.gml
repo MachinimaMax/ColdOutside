@@ -6,8 +6,9 @@ stack_count = 0;
 stack_type = "";
 in_game_sprite_index = noone;
 gui_sprite_index = noone;
+inventory_index = noone;
 
 // what does this stack change when used
-resource_type = noone;
+resource = noone;
 // how much to change the resource_type
 value = 0;

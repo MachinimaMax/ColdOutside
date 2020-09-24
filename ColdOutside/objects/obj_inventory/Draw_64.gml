@@ -16,10 +16,8 @@ for (i = 0; i < inventory_slots; i += 1)
    {
 	var current_stack = ds_list_find_value(inventory_list, i);
 	if(current_stack.stack_type != "" && current_stack.stack_count <= 0){
-		show_debug_message("i: " + string(i));
-		show_debug_message(current_stack.stack_type);
-		show_debug_message("new_empty_stack count: " + string(current_stack.stack_count));
 		current_stack = instance_create_depth(0,0, 0, obj_stack);
+		current_stack.inventory_index = i;
 		ds_list_replace(inventory_list, i, current_stack);
 		
 	}
@@ -27,10 +25,45 @@ for (i = 0; i < inventory_slots; i += 1)
 	if(point_in_rectangle(mouseX, mouseY, item_one_x, item_one_y, item_one_x + inventory_item_width,
 		item_one_y + inventory_item_height)){
 			
-			// what to do on a left click on the object
-			if(player_reference.left_click && current_stack.stack_type != ""){
+		if(replace_timer > 0){
+			replace_timer--;
+		}
+			
+		// what to do on a left click on the object
+		if(player_reference.left_click && current_stack.stack_type != ""){
+				
+			// if there is already a stack being dragged and this slot is not empty
+			if(mouse_follow_stack != noone && mouse_follow_stack.inventory_index != i){
+				replace_timer = room_speed *.5;
+					
+				// put current_stack in this spot
+				ds_list_replace(inventory_list, mouse_follow_stack.inventory_index, current_stack);
+				current_stack.inventory_index = mouse_follow_stack.inventory_index;
+					
+				// put this spot in current_stacks place
+				ds_list_replace(inventory_list, i, mouse_follow_stack);
+				mouse_follow_stack.inventory_index = i;
+					
+				//current_stack = ds_list_find_value(inventory_list, i);
+				mouse_follow_stack = noone;
+			}
+				
+			if(replace_timer <= 0){
+				replace_timer = room_speed *.3;
 				mouse_follow_stack = current_stack;
 			}
+		// drag stack onto empty inventory slot
+		}else if(player_reference.left_click && current_stack.stack_type == "" and mouse_follow_stack != noone){
+			replace_timer = room_speed *.3;
+			//cent_stack.inventory_index = mouse_follow_stack.inventory_index;
+			ds_list_replace(inventory_list, mouse_follow_stack.inventory_index, current_stack);
+			current_stack.inventory_index = mouse_follow_stack.inventory_index;
+			
+			ds_list_replace(inventory_list, i, mouse_follow_stack);
+			mouse_follow_stack.inventory_index = i;
+			
+			mouse_follow_stack = noone
+		}
 	}
 	else{
 		if(mouse_follow_stack != noone && current_stack == mouse_follow_stack){
