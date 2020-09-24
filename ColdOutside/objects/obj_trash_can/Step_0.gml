@@ -1,6 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// refill the trashcan every morning
+if(day && refill_trash){
+	show_debug_message("HERE");
+	contained_stack = scr_trash_stack_generator(x, y);
+	refill_trash = false
+}
+if(night){
+	refill_trash = true;
+}
+
 // closes the trash can if the player moves away from it
 var player = instance_place(x, y, obj_player);
 if !instance_exists(player){
