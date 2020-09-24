@@ -29,6 +29,7 @@
     {"id":{"name":"family_member","path":"objects/family_member/family_member.yy",},"order":10,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"spr_inventory_slot","path":"sprites/spr_inventory_slot/spr_inventory_slot.yy",},"order":5,},
+    {"id":{"name":"scr_drag_stack","path":"scripts/scr_drag_stack/scr_drag_stack.yy",},"order":3,},
     {"id":{"name":"spr_temp_trashcan","path":"sprites/spr_temp_trashcan/spr_temp_trashcan.yy",},"order":16,},
     {"id":{"name":"scr_trash_stack_generator","path":"scripts/scr_trash_stack_generator/scr_trash_stack_generator.yy",},"order":2,},
     {"id":{"name":"obj_whitebox_temp","path":"objects/obj_whitebox_temp/obj_whitebox_temp.yy",},"order":1,},

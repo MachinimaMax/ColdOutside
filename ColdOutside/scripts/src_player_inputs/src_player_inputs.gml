@@ -15,4 +15,8 @@ function src_player_inputs(){
 	// family menu input
 	family_menu_on = keyboard_check(vk_tab);
 	
+	//clicks
+	left_click = mouse_check_button(mb_left);
+	right_click = mouse_check_button(mb_right);
+	
 }

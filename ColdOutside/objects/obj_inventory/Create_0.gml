@@ -4,6 +4,8 @@
 // number of inventory Items
 inventory_slots = 4;
 x_increase = 109;
+mouse_follow_stack = noone;
+timer = room_speed * .3;
 
 // holds all of the stack values
 inventory_list = ds_list_create();

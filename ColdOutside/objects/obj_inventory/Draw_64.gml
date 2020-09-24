@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+player_reference =  instance_find(obj_player, 0);
+
 mouseX = device_mouse_x_to_gui(0);
 mouseY = device_mouse_y_to_gui(0);
 
@@ -16,10 +18,18 @@ for (i = 0; i < inventory_slots; i += 1)
 	   
 	if(point_in_rectangle(mouseX, mouseY, item_one_x, item_one_y, item_one_x + inventory_item_width,
 		item_one_y + inventory_item_height)){
-			draw_sprite(spr_inventory_hover, 0, item_one_x, item_one_y);
+			
+			// what to do on a left click on the object
+			if(player_reference.left_click && current_stack.stack_type != ""){
+				mouse_follow_stack = current_stack;
+			}
 	}
 	else{
-		draw_sprite(spr_inventory_slot, 0, item_one_x, item_one_y);
+		if(mouse_follow_stack != noone && current_stack == mouse_follow_stack){
+			draw_sprite(spr_inventory_hover, 0, item_one_x, item_one_y);
+		}else{
+			draw_sprite(spr_inventory_slot, 0, item_one_x, item_one_y);
+		}
 	}
 	
 	// draw the gui stack images. TODO: display the number of items in the stack clearly
@@ -32,6 +42,22 @@ for (i = 0; i < inventory_slots; i += 1)
 	
 	// increment x
 	item_one_x += x_increase;
+	
+	// follow the mouse
+	if(mouse_follow_stack != noone){
+		draw_sprite(mouse_follow_stack.gui_sprite_index, 0, mouseX, mouseY);
+		
+		if(timer>0){
+			timer --;
+		}
+		else{
+			if(!scr_drag_stack(player_reference, mouseX, mouseY)){
+				mouse_follow_stack = noone;
+			}
+			timer = room_speed * .3;
+		}
+	}
+	
 }
 
 

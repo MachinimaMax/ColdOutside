@@ -16,6 +16,8 @@ default_move_speed = move_speed;
 // other inputs
 interact = 0;
 family_menu_on = 0;
+left_click = 0;
+right_click = 0;
 
 // Resource stats
 
