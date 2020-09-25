@@ -34,7 +34,7 @@ for (i = 0; i < inventory_slots; i += 1)
 				
 			// if there is already a stack being dragged and this slot is not empty
 			if(mouse_follow_stack != noone && mouse_follow_stack.inventory_index != i){
-				replace_timer = room_speed *.5;
+				replace_timer = room_speed *.2;
 					
 				// put current_stack in this spot
 				ds_list_replace(inventory_list, mouse_follow_stack.inventory_index, current_stack);
@@ -49,12 +49,12 @@ for (i = 0; i < inventory_slots; i += 1)
 			}
 				
 			if(replace_timer <= 0){
-				replace_timer = room_speed *.3;
+				replace_timer = room_speed *.2;
 				mouse_follow_stack = current_stack;
 			}
 		// drag stack onto empty inventory slot
 		}else if(player_reference.left_click && current_stack.stack_type == "" and mouse_follow_stack != noone){
-			replace_timer = room_speed *.3;
+			replace_timer = room_speed *.2;
 			//cent_stack.inventory_index = mouse_follow_stack.inventory_index;
 			ds_list_replace(inventory_list, mouse_follow_stack.inventory_index, current_stack);
 			current_stack.inventory_index = mouse_follow_stack.inventory_index;
@@ -94,7 +94,7 @@ for (i = 0; i < inventory_slots; i += 1)
 			if(!scr_drag_stack(mouseX, mouseY, mouse_follow_stack)){
 				mouse_follow_stack = noone;
 			}
-			timer = room_speed * .3;
+			timer = room_speed * .2;
 		}
 	}
 	

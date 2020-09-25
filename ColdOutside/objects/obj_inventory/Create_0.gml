@@ -5,7 +5,7 @@
 inventory_slots = 4;
 x_increase = 109;
 mouse_follow_stack = noone;
-timer = room_speed * .3;
+timer = room_speed * .2;
 replace_timer = 0;
 
 // holds all of the stack values
